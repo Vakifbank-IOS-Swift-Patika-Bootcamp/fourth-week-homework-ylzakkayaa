@@ -13,10 +13,12 @@ struct EpisodesModel: Codable {
     let episodesName: String
     let seasons: String
     let characters: [String]
+    let episode: String
     
     enum CodingKeys: String, CodingKey {
         case episodesName = "title"
         case seasons = "season"
         case characters = "characters"
+        case episode = "episode"
     }
 }

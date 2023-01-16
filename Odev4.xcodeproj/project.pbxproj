@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0137C5829354D1300E126CF /* SwiftAlertView in Frameworks */ = {isa = PBXBuildFile; productRef = F0137C5729354D1300E126CF /* SwiftAlertView */; };
+		F0137C5C2935570E00E126CF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0137C5B2935570E00E126CF /* CoreDataManager.swift */; };
+		F0137C5F2935600900E126CF /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0137C5D2935600900E126CF /* NoteTableViewCell.swift */; };
+		F0137C602935600900E126CF /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0137C5E2935600900E126CF /* NoteTableViewCell.xib */; };
 		F041CC75292EA206006CC55A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041CC74292EA206006CC55A /* AppDelegate.swift */; };
 		F041CC77292EA206006CC55A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041CC76292EA206006CC55A /* SceneDelegate.swift */; };
 		F041CC79292EA206006CC55A /* CharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041CC78292EA206006CC55A /* CharactersListViewController.swift */; };
@@ -35,9 +39,14 @@
 		F0C5D0B12932285100529A15 /* EpisodesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0C5D0AF2932285100529A15 /* EpisodesTableViewCell.xib */; };
 		F0C5D0B329322AA800529A15 /* EpisodesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C5D0B229322AA800529A15 /* EpisodesModel.swift */; };
 		F0C5D0B52932358400529A15 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C5D0B42932358400529A15 /* EpisodesViewController.swift */; };
+		F0DDA30329392DC1005A3CC9 /* AddNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DDA30229392DC1005A3CC9 /* AddNotesViewController.swift */; };
+		F0DDA30529393C23005A3CC9 /* ListNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DDA30429393C23005A3CC9 /* ListNotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F0137C5B2935570E00E126CF /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		F0137C5D2935600900E126CF /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		F0137C5E2935600900E126CF /* NoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
 		F041CC71292EA206006CC55A /* Odev4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Odev4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F041CC74292EA206006CC55A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F041CC76292EA206006CC55A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +72,8 @@
 		F0C5D0AF2932285100529A15 /* EpisodesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodesTableViewCell.xib; sourceTree = "<group>"; };
 		F0C5D0B229322AA800529A15 /* EpisodesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesModel.swift; sourceTree = "<group>"; };
 		F0C5D0B42932358400529A15 /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		F0DDA30229392DC1005A3CC9 /* AddNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotesViewController.swift; sourceTree = "<group>"; };
+		F0DDA30429393C23005A3CC9 /* ListNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0137C5829354D1300E126CF /* SwiftAlertView in Frameworks */,
 				F09DEF1A2933D90A003DFFE3 /* SwiftAlertView in Frameworks */,
 				F0C5D0A92932133800529A15 /* SDWebImage in Frameworks */,
 				F0C5D09E2931591300529A15 /* SDWebImageMapKit in Frameworks */,
@@ -117,6 +129,7 @@
 				F041CC9E292F84AC006CC55A /* CharacterModel.swift */,
 				F0C5D0A329317E9300529A15 /* QuoteModel.swift */,
 				F0C5D0B229322AA800529A15 /* EpisodesModel.swift */,
+				F0137C5B2935570E00E126CF /* CoreDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,8 +141,10 @@
 				F041CC99292F7D22006CC55A /* CharactersCollectionViewCell.xib */,
 				F0C5D0AF2932285100529A15 /* EpisodesTableViewCell.xib */,
 				F0C5D0AE2932285100529A15 /* EpisodesTableViewCell.swift */,
-				F0A97E3D2932AC3A00D9346B /* EpisodesCharactersView.swift */,
 				F0A97E3F2932AC4F00D9346B /* EpisodesCharactersView.xib */,
+				F0A97E3D2932AC3A00D9346B /* EpisodesCharactersView.swift */,
+				F0137C5D2935600900E126CF /* NoteTableViewCell.swift */,
+				F0137C5E2935600900E126CF /* NoteTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -138,11 +153,13 @@
 			isa = PBXGroup;
 			children = (
 				F0C5D0A12931619800529A15 /* CharacterViewController.swift */,
-				F0C5D0A52931839C00529A15 /* QuotesViewController.swift */,
 				F041CC78292EA206006CC55A /* CharactersListViewController.swift */,
-				F0C5D0B42932358400529A15 /* EpisodesViewController.swift */,
 				F0A97E432932CE3A00D9346B /* imdbWebViewController.swift */,
 				F09DEF132933D890003DFFE3 /* BaseViewController.swift */,
+				F0C5D0A52931839C00529A15 /* QuotesViewController.swift */,
+				F0C5D0B42932358400529A15 /* EpisodesViewController.swift */,
+				F0DDA30429393C23005A3CC9 /* ListNotesViewController.swift */,
+				F0DDA30229392DC1005A3CC9 /* AddNotesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,6 +207,7 @@
 				F0C5D0A82932133800529A15 /* SDWebImage */,
 				F09DEF162933D8D1003DFFE3 /* MaterialActivityIndicator */,
 				F09DEF192933D90A003DFFE3 /* SwiftAlertView */,
+				F0137C5729354D1300E126CF /* SwiftAlertView */,
 			);
 			productName = Odev4;
 			productReference = F041CC71292EA206006CC55A /* Odev4.app */;
@@ -227,6 +245,7 @@
 				F0C5D0A72932133800529A15 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				F09DEF152933D8D1003DFFE3 /* XCRemoteSwiftPackageReference "MaterialActivityIndicator" */,
 				F09DEF182933D90A003DFFE3 /* XCRemoteSwiftPackageReference "SwiftAlertView" */,
+				F0137C5629354D1300E126CF /* XCRemoteSwiftPackageReference "SwiftAlertView" */,
 			);
 			productRefGroup = F041CC72292EA206006CC55A /* Products */;
 			projectDirPath = "";
@@ -242,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0137C602935600900E126CF /* NoteTableViewCell.xib in Resources */,
 				F041CC9B292F7D22006CC55A /* CharactersCollectionViewCell.xib in Resources */,
 				F041CC84292EA208006CC55A /* LaunchScreen.storyboard in Resources */,
 				F041CC81292EA208006CC55A /* Assets.xcassets in Resources */,
@@ -260,13 +280,17 @@
 			files = (
 				F0C5D0A22931619800529A15 /* CharacterViewController.swift in Sources */,
 				F0C5D0B329322AA800529A15 /* EpisodesModel.swift in Sources */,
+				F0DDA30529393C23005A3CC9 /* ListNotesViewController.swift in Sources */,
 				F0C5D0B52932358400529A15 /* EpisodesViewController.swift in Sources */,
+				F0137C5F2935600900E126CF /* NoteTableViewCell.swift in Sources */,
+				F0137C5C2935570E00E126CF /* CoreDataManager.swift in Sources */,
 				F0C5D0B02932285100529A15 /* EpisodesTableViewCell.swift in Sources */,
 				F041CC7F292EA206006CC55A /* Odev4.xcdatamodeld in Sources */,
 				F041CC79292EA206006CC55A /* CharactersListViewController.swift in Sources */,
 				F041CC75292EA206006CC55A /* AppDelegate.swift in Sources */,
 				F09DEF142933D890003DFFE3 /* BaseViewController.swift in Sources */,
 				F041CC93292EB85D006CC55A /* BaseResponse.swift in Sources */,
+				F0DDA30329392DC1005A3CC9 /* AddNotesViewController.swift in Sources */,
 				F0C5D0A62931839C00529A15 /* QuotesViewController.swift in Sources */,
 				F0A97E3E2932AC3A00D9346B /* EpisodesCharactersView.swift in Sources */,
 				F0C5D0A429317E9300529A15 /* QuoteModel.swift in Sources */,
@@ -496,6 +520,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F0137C5629354D1300E126CF /* XCRemoteSwiftPackageReference "SwiftAlertView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dinhquan/SwiftAlertView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		F09DEF152933D8D1003DFFE3 /* XCRemoteSwiftPackageReference "MaterialActivityIndicator" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/nspavlo/MaterialActivityIndicator";
@@ -555,6 +587,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F0137C5729354D1300E126CF /* SwiftAlertView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0137C5629354D1300E126CF /* XCRemoteSwiftPackageReference "SwiftAlertView" */;
+			productName = SwiftAlertView;
+		};
 		F09DEF162933D8D1003DFFE3 /* MaterialActivityIndicator */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F09DEF152933D8D1003DFFE3 /* XCRemoteSwiftPackageReference "MaterialActivityIndicator" */;

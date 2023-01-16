@@ -54,7 +54,7 @@ extension EpisodesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
-    
+     
     //View'ın sayfada ortalanmsaı için rame verdim.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let episodeCharacter = EpisodesCharactersView(frame: CGRect(x: view.frame.size.width  / 2 - 200,
